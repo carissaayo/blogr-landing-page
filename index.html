@@ -4,63 +4,67 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
+    <link rel="stylesheet" href="./css/styles.css" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
     <title>Frontend Mentor | [Blogr]</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <main id="main-con">
       <section id="top-part">
         <header>
-          <div class="logo-con">
-            <img src="" alt="logo" />
-          </div>
-          <nav class="nav-con">
-            <section>
-              <li>Product</li>
-              <div>
-                <li>Pricing</li>
-                <li>Marketplace</li>
-                <li>Features</li>
-                <li>Integrations</li>
-              </div>
-            </section>
-            <section>
-              <li>Company</li>
+          <div>
+            <div class="logo-con">
+              <img src="./images/logo.svg" alt="logo" />
+            </div>
+            <nav class="nav-con">
+              <section>
+                <li>
+                  Product
+                  <span
+                    ><img alt="arrow" src="./images/icon-arrow-light.svg"
+                  /></span>
+                </li>
+                <div>
+                  <li>Pricing</li>
+                  <li>Marketplace</li>
+                  <li>Features</li>
+                  <li>Integrations</li>
+                </div>
+              </section>
+              <section>
+                <li>
+                  Company<span
+                    ><img alt="arrow" src="./images/icon-arrow-light.svg"
+                  /></span>
+                </li>
 
-              <div>
-                <li>About</li>
-                <li>Team</li>
-                <li>Blog</li>
-                <li>Careers</li>
-              </div>
-            </section>
-            <section>
-              <li>Connect</li>
-              <div>
-                <li>Contact</li>
-                <li>Newsletter</li>
-                <li>LinkedIn</li>
-              </div>
-            </section>
-          </nav>
+                <div>
+                  <li>About</li>
+                  <li>Team</li>
+                  <li>Blog</li>
+                  <li>Careers</li>
+                </div>
+              </section>
+              <section>
+                <li>
+                  Connect<span
+                    ><img alt="arrow" src="./images/icon-arrow-light.svg"
+                  /></span>
+                </li>
+                <div>
+                  <li>Contact</li>
+                  <li>Newsletter</li>
+                  <li>LinkedIn</li>
+                </div>
+              </section>
+            </nav>
+          </div>
+
           <div class="login-con">
             <button>Login</button>
             <button>Sign Up</button>
@@ -70,8 +74,8 @@
           <h2>A modern publishing platform</h2>
           <p>Grow your audience and build your online brand</p>
           <div class="btn-con">
-            <button>Start for Free</button>
-            <button>Learn More</button>
+            <button class='start-free'>Start for Free</button>
+            <button class="learn-more">Learn More</button>
           </div>
         </section>
       </section>
@@ -164,14 +168,15 @@
           <li>LinkedIn</li>
         </ul>
       </footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a target="_blank" href="https://yussufajao.netlify.app/">Yussuf Ajao</a
+        >.
+      </div>
     </main>
     Product Overview Pricing Marketplace Features Integrations
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by
-      <a target="_blank" href="https://yussufajao.netlify.app/">Yussuf Ajao</a>.
-    </div>
   </body>
 </html>
