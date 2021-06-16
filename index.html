@@ -11,25 +11,38 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,600;1,300&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Frontend Mentor | [Blogr]</title>
   </head>
   <body>
     <main id="main-con">
       <section id="top-part">
         <header>
-          <div>
-            <div class="logo-con">
+         <div class="logo-flex">
+ <div class="logo-con">
               <img src="./images/logo.svg" alt="logo" />
             </div>
+            <div class="harmburger-con">
+              <img class='hide-btn' src='./images/icon-close.svg' alt='close-btn'/>
+              <img class='open-nav-btn' src="./images/icon-hamburger.svg" alt="harmburger" />
+            </div>
+         </div>
+           
+
+            <div class="header-flex" >
             <nav class="nav-con">
               <section>
                 <li>
                   Product
-                  <span
+                  <span class='desktop'
                     ><img alt="arrow" src="./images/icon-arrow-light.svg"
+                  /></span><span class='mobile'
+                    ><img alt="arrow" src="./images/icon-arrow-dark.svg"
                   /></span>
                 </li>
-                <div>
+                <div class="links">
                   <li>Pricing</li>
                   <li>Marketplace</li>
                   <li>Features</li>
@@ -38,12 +51,15 @@
               </section>
               <section>
                 <li>
-                  Company<span
+                  Company<span class="desktop"
                     ><img alt="arrow" src="./images/icon-arrow-light.svg"
+                  /></span>
+                  <span class='mobile'
+                    ><img alt="arrow" src="./images/icon-arrow-dark.svg"
                   /></span>
                 </li>
 
-                <div>
+                <div class="links">
                   <li>About</li>
                   <li>Team</li>
                   <li>Blog</li>
@@ -52,22 +68,26 @@
               </section>
               <section>
                 <li>
-                  Connect<span
+                  Connect<span class="desktop"
                     ><img alt="arrow" src="./images/icon-arrow-light.svg"
                   /></span>
+                  <span class='mobile'
+                    ><img alt="arrow" src="./images/icon-arrow-dark.svg"
+                  /></span>
                 </li>
-                <div>
+                <div class="links">
                   <li>Contact</li>
                   <li>Newsletter</li>
                   <li>LinkedIn</li>
                 </div>
               </section>
             </nav>
-          </div>
+          
 
           <div class="login-con">
             <button>Login</button>
             <button>Sign Up</button>
+          </div>
           </div>
         </header>
         <section id="hero-con">
