@@ -25,21 +25,21 @@
               <img src="./images/logo.svg" alt="logo" />
             </div>
             <div class="harmburger-con">
-              <img class='hide-btn' src='./images/icon-close.svg' alt='close-btn'/>
-              <img class='open-nav-btn' src="./images/icon-hamburger.svg" alt="harmburger" />
+              <img class='close-btn hide-btn' data-id='close-nav' src='./images/icon-close.svg' alt='close-btn'/>
+              <img class='open-btn' data-id='open-nav'  src="./images/icon-hamburger.svg" alt="harmburger" />
             </div>
          </div>
            
 
-            <div class="header-flex" >
+            <div class="header-flex show-nav" >
             <nav class="nav-con">
-              <section>
+              <!-- <section>
                 <li>
                   Product
                   <span class='desktop'
-                    ><img alt="arrow" src="./images/icon-arrow-light.svg"
+                    ><img data-id='arrow1' alt="arrow-up" src="./images/icon-arrow-light.svg"
                   /></span><span class='mobile'
-                    ><img alt="arrow" src="./images/icon-arrow-dark.svg"
+                    ><img alt="arrow-down" data-id='arrow1' src="./images/icon-arrow-dark.svg"
                   /></span>
                 </li>
                 <div class="links">
@@ -52,10 +52,10 @@
               <section>
                 <li>
                   Company<span class="desktop"
-                    ><img alt="arrow" src="./images/icon-arrow-light.svg"
+                    ><img alt="arrow" data-id='arrow2' src="./images/icon-arrow-light.svg"
                   /></span>
                   <span class='mobile'
-                    ><img alt="arrow" src="./images/icon-arrow-dark.svg"
+                    ><img alt="arrow" data-id='arrow2' src="./images/icon-arrow-dark.svg"
                   /></span>
                 </li>
 
@@ -69,10 +69,10 @@
               <section>
                 <li>
                   Connect<span class="desktop"
-                    ><img alt="arrow" src="./images/icon-arrow-light.svg"
+                    ><img alt="arrow" data-id='arrow3' src="./images/icon-arrow-light.svg"
                   /></span>
                   <span class='mobile'
-                    ><img alt="arrow" src="./images/icon-arrow-dark.svg"
+                    ><img alt="arrow" data-id='arrow3' src="./images/icon-arrow-dark.svg"
                   /></span>
                 </li>
                 <div class="links">
@@ -80,7 +80,7 @@
                   <li>Newsletter</li>
                   <li>LinkedIn</li>
                 </div>
-              </section>
+              </section> -->
             </nav>
           
 
@@ -145,6 +145,7 @@
           </div>
         </div>
       </section>
+
       <section class="simple">
         <div class="simple-con">
           <div class="img-con">
@@ -209,7 +210,9 @@
             >Yussuf Ajao</a
           >.
         </div>
+        
       </footer>
     </main>
+    <script src="./js/app.js" defer></script>
   </body>
 </html>
