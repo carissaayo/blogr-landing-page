@@ -39,7 +39,7 @@ body #main-con > * {
 body #main-con #top-part {
   font-weight: 300;
   font-family: "Overpass", sans-serif;
-  height: 300px;
+  height: 400px;
   color: white;
   padding: 20px 10%;
   background-image: url("../images/bg-pattern-intro.svg");
@@ -53,50 +53,52 @@ body #main-con #top-part header {
   justify-content: space-between;
   align-items: center;
   height: 90px;
+  margin-bottom: 40px;
 }
 
 body #main-con #top-part header .header-flex {
-  width: 750px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-body #main-con #top-part header .logo-flex .logo-con {
+body #main-con #top-part header .header-flex .logo-con {
   width: 120px;
   margin-right: 20px;
 }
 
-body #main-con #top-part header .logo-flex .logo-con img {
+body #main-con #top-part header .header-flex .logo-con img {
   width: 60px;
   height: auto;
 }
 
-body #main-con #top-part header .logo-flex .harmburger-con {
+body #main-con #top-part header .header-flex .harmburger-con {
   display: none;
 }
 
-body #main-con #top-part header .nav-con {
+body #main-con #top-part header .header-flex .nav-con {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  width: 250px;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
-body #main-con #top-part header .nav-con .active {
+body #main-con #top-part header .header-flex .nav-con .active {
   transform: rotate(180deg);
 }
 
-body #main-con #top-part header .nav-con li picture {
+body #main-con #top-part header .header-flex .nav-con li {
+  margin-right: 30px;
+}
+
+body #main-con #top-part header .header-flex .nav-con li picture {
   margin-left: 5px;
 }
 
-body #main-con #top-part header .nav-con section {
+body #main-con #top-part header .header-flex .nav-con section {
   position: relative;
 }
 
-body #main-con #top-part header .nav-con section .links {
+body #main-con #top-part header .header-flex .nav-con section .links {
   display: none;
   top: 25px;
   position: absolute;
@@ -110,27 +112,28 @@ body #main-con #top-part header .nav-con section .links {
   text-transform: capitalize;
 }
 
-body #main-con #top-part header .nav-con section .links li {
+body #main-con #top-part header .header-flex .nav-con section .links li {
   margin-bottom: 10px;
 }
 
-body #main-con #top-part header .nav-con section .show-links {
+body #main-con #top-part header .header-flex .nav-con section .show-links {
   display: block;
 }
 
 body #main-con #top-part header .login-con {
   display: flex;
   justify-content: space-between;
-  width: 150px;
+  width: 200px;
 }
 
 body #main-con #top-part header .login-con button {
   height: 30px;
   color: inherit;
-  width: 70px;
+  width: 100px;
   background-color: inherit;
   outline: none;
   border: none;
+  font-size: 0.9rem;
 }
 
 body #main-con #top-part header .login-con button:hover {
@@ -139,9 +142,15 @@ body #main-con #top-part header .login-con button:hover {
   border-radius: 20px;
 }
 
+body #main-con #top-part header .login-con button:nth-child(2) {
+  background-color: white;
+  color: #ff525d;
+  border-radius: 20px;
+}
+
 body #main-con #top-part #hero-con {
   text-align: center;
-  font-size: 1rem;
+  margin-bottom: 130px;
 }
 
 body #main-con #top-part #hero-con > * {
@@ -149,11 +158,12 @@ body #main-con #top-part #hero-con > * {
 }
 
 body #main-con #top-part #hero-con h2 {
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 body #main-con #top-part #hero-con p {
-  font-size: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
 }
 
 body #main-con #top-part #hero-con .btn-con button {
@@ -165,21 +175,25 @@ body #main-con #top-part #hero-con .btn-con button {
   border-radius: 20px;
 }
 
-body #main-con #top-part #hero-con .btn-con .start-free:hover {
-  background-color: #ff7a85;
+body #main-con #top-part #hero-con .btn-con .start-free {
   cursor: pointer;
+  background-color: white;
+  color: #ff525d;
+  border-radius: 20px;
 }
 
-body #main-con #top-part #hero-con .btn-con .learn-more:hover {
-  color: #ff7a85;
-  background-color: white;
+body #main-con #top-part #hero-con .btn-con .learn-more {
+  border: 1px solid white;
+  color: white;
 }
 
 body #main-con .future {
-  margin-bottom: 60px;
+  padding-top: 100px;
+  padding-bottom: 130px;
+  overflow: hidden;
 }
 
-body #main-con .future h3 {
+body #main-con .future h2 {
   text-align: center;
   margin-bottom: 20px;
   font-size: 2rem;
@@ -193,26 +207,28 @@ body #main-con .future .future-flex-con {
 }
 
 body #main-con .future .future-flex-con .text-con .text {
+  padding-right: 60px;
+  line-height: 30px;
   margin-bottom: 50px;
 }
 
-body #main-con .future .future-flex-con .text-con .text h4 {
+body #main-con .future .future-flex-con .text-con .text h3 {
   margin-bottom: 20px;
+  font-size: 2rem;
 }
 
 body #main-con .future .future-flex-con .text-con .text p {
-  font-size: 0.8rem;
-  line-height: 20px;
+  font-size: 1rem;
 }
 
 body #main-con .future .future-flex-con .img-con {
   position: absolute;
-  right: -200px;
-  top: -90px;
+  right: -480px;
+  top: -150px;
 }
 
-body #main-con .future .future-flex-con .img-con img {
-  width: 500px;
+body #main-con .future .future-flex-con .img-con picture img {
+  width: 80%;
 }
 
 body #main-con .art {
@@ -223,6 +239,8 @@ body #main-con .art {
   margin-bottom: 120px;
   border-bottom-left-radius: 90px;
   border-top-right-radius: 90px;
+  height: 400px;
+  margin-top: 50px;
 }
 
 body #main-con .art .art-flex-con {
@@ -239,22 +257,30 @@ body #main-con .art .art-flex-con .img-con {
 
 body #main-con .art .art-flex-con .img-con img {
   position: absolute;
-  width: 400px;
-  top: -70px;
+  top: -90px;
   left: -30px;
 }
 
 body #main-con .art .art-flex-con .art-text-con {
   padding-top: 60px;
-  line-height: 20px;
+  padding-right: 50px;
+  line-height: 30px;
 }
 
 body #main-con .art .art-flex-con .art-text-con p {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
+  padding-right: 50px;
+}
+
+body #main-con .art .art-flex-con .art-text-con h3 {
+  font-size: 2rem;
 }
 
 body #main-con .simple {
+  height: 700px;
   margin-bottom: 100px;
+  padding-top: 120px;
+  padding-bottom: 100px;
 }
 
 body #main-con .simple .simple-con {
@@ -268,27 +294,37 @@ body #main-con .simple .simple-con .img-con {
   position: relative;
 }
 
-body #main-con .simple .simple-con .img-con img {
+body #main-con .simple .simple-con .img-con picture {
   position: absolute;
-  width: 550px;
-  top: -70px;
-  left: -220px;
+  top: -150px;
+  left: -400px;
 }
 
-body #main-con .simple .simple-con .simple-min-text-con h4 {
-  margin-bottom: 20px;
+body #main-con .simple .simple-con .img-con picture img {
+  width: 90%;
+}
+
+body #main-con .simple .simple-con .simple-min-text-con {
+  line-height: 30px;
+}
+
+body #main-con .simple .simple-con .simple-min-text-con h3 {
+  margin-bottom: 30px;
+  font-size: 2rem;
 }
 
 body #main-con .simple .simple-con .simple-min-text-con p {
-  font-size: 0.8rem;
-  margin-bottom: 20px;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
 }
 
 body #main-con footer {
+  height: 400px;
   color: white;
   background-color: #25252d;
-  font-size: 0.7rem;
+  font-size: 1.2rem;
   border-top-right-radius: 70px;
+  padding-top: 70px;
 }
 
 body #main-con footer .footer-con {
@@ -300,7 +336,7 @@ body #main-con footer .footer-con {
 }
 
 body #main-con footer .footer-con .logo-con img {
-  width: 70px;
+  width: 100%;
 }
 
 body #main-con footer .footer-con ul {
@@ -495,19 +531,6 @@ body #main-con .attribution a {
   body #main-con #top-part header {
     position: relative;
     margin-bottom: 50px;
-  }
-  body #main-con #top-part header .header-flex {
-    display: none;
-    position: absolute;
-    top: 80px;
-    left: 0px;
-    width: 100%;
-    color: #2c2d3f;
-    background-color: white;
-    text-align: center;
-    padding: 20px;
-    font-size: 1rem;
-    font-weight: 500;
   }
   body #main-con #top-part header .show-nav {
     display: block;

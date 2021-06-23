@@ -67,18 +67,12 @@ window.addEventListener("DOMContentLoaded", () => {
   const arrowCon = document.querySelectorAll("picture > img");
   arrowCon.forEach((arrow) => {
     arrow.addEventListener("click", (e) => {
-      const item = e.target;
-      console.log(item);
-      if(arrow.dataset.id === item.dataset.id)
-      item.classList.add('active')
-      else{
-        arrow.classList.remove('active')
+      const item = e.currentTarget;
+      if (arrow.dataset.id === item.dataset.id) {
+        item.classList.toggle("active");
+        const linksCon = item.parentElement.parentElement.nextElementSibling;
+        linksCon.classList.toggle("show-links");
       }
-      // if (arrow.dataset.id === item.dataset.id) {
-      //   item.classList.toggle("active");
-      //   const linksCon = item.parentElement.parentElement.nextElementSibling;
-      //   linksCon.classList.toggle("show-links");
-      // }
     });
   });
 });

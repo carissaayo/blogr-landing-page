@@ -20,19 +20,22 @@
     <main id="main-con">
       <section id="top-part">
         <header>
-         <div class="logo-flex">
- <div class="logo-con">
+         <div class="header-flex">
+          <div class="logo-con">
               <img src="./images/logo.svg" alt="logo" />
             </div>
             <div class="harmburger-con">
               <img class='close-btn hide-btn' data-id='close-nav' src='./images/icon-close.svg' alt='close-btn'/>
               <img class='open-btn' data-id='open-nav'  src="./images/icon-hamburger.svg" alt="harmburger" />
             </div>
+            <nav class="nav-con">
+             
+            </nav>
          </div>
            
 
-            <div class="header-flex show-nav" >
-            <nav class="nav-con">
+            <!-- <div class="header-flexu show-nav" > -->
+            <!-- <nav class="nav-con"> -->
              
             </nav>
           
@@ -53,11 +56,11 @@
         </section>
       </section>
       <section class="future">
-        <h3>Designed for the future</h3>
+        <h2>Designed for the future</h2>
         <div class="future-flex-con">
           <div class="text-con">
             <div class="text">
-              <h4>Introducing an extensible editor</h4>
+              <h3>Introducing an extensible editor</h3>
               <p>
                 Blogr features an exceedingly intuitive interface which lets you
                 focus on one thing: creating content. The editor supports
@@ -68,7 +71,7 @@
               </p>
             </div>
             <div class="text">
-              <h4>Robust content management</h4>
+              <h3>Robust content management</h3>
               <p>
                 Flexible content management enables users to easily move through
                 posts. Increase the usability of your blog by adding customized
@@ -78,9 +81,13 @@
             </div>
           </div>
           <div class="img-con">
-            <img src="./images/illustration-editor-desktop.svg" alt="" />
+           <picture >
+                <source media='(max-width:590px)' srcset="./images/illustration-editor-mobile.svg">
+                <source media='(min-width:591px)' srcset="./images/illustration-editor-desktop.svg">
+                <img alt="arrow" data-id=${index}  src="./images/illustration-editor-desktop.svg"/>
+          </picture>
+          
           </div>
-        </div>
       </section>
       <section class="art">
         <div class="art-flex-con">
@@ -88,7 +95,7 @@
             <img src="./images/illustration-phones.svg" alt="" />
           </div>
           <div class="art-text-con">
-            <h4>State of the Art Infrastructure</h4>
+            <h3>State of the Art Infrastructure</h3>
             <p>
               With reliability and speed in mind, worldwide data centers provide
               the backbone for ultra-fast connectivity. This ensures your site
@@ -102,11 +109,15 @@
       <section class="simple">
         <div class="simple-con">
           <div class="img-con">
-            <img src="./images/illustration-laptop-mobile.svg" alt="" />
+            <picture>
+              <source  media="(max-width:590px)" srcset="./images/illustration-laptop-mobile.svg">
+              <source  media="(min-width:591px)" srcset="./images/illustration-laptop-desktop.svg">
+              <img src="./images/illustration-laptop-desktop.svg" alt="" />
+            </picture>
           </div>
           <div class="simple-main-text-con">
             <div class="simple-min-text-con">
-              <h4>Free, open,simple</h4>
+              <h3>Free, open,simple</h3>
               <p>
                 Blogr is a free and open source application backed by a large
                 community of helpful developers. It supports features such as
@@ -117,7 +128,7 @@
               </p>
             </div>
             <div class="simple-min-text-con">
-              <h4>Powerful tooling</h4>
+              <h3>Powerful tooling</h3>
               <p>
                 Batteries included. We built a simple and straightforward CLI
                 tool that makes customization and deployment a breeze, but
