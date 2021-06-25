@@ -27,8 +27,8 @@ const data = [
   },
 ];
 
-const nav = document.querySelector(".nav-con");
-const navCon = document.querySelector(".header-flex");
+const nav = document.querySelector(".nav");
+const navCon = document.querySelector(".nav-con");
 const openNav = document.querySelector('[data-id="open-nav"]');
 const closeNav = document.querySelector('[data-id="close-nav"]');
 window.addEventListener("DOMContentLoaded", () => {
@@ -43,8 +43,8 @@ window.addEventListener("DOMContentLoaded", () => {
         <li>${page}
         
                   <picture >
-                <source media='(max-width:590px)' srcset="./images/icon-arrow-dark.svg">
-                <source media='(min-width:591px)' srcset="./images/icon-arrow-light.svg">
+                <source media='(max-width:750px)' srcset="./images/icon-arrow-dark.svg">
+                <source media='(min-width:751px)' srcset="./images/icon-arrow-light.svg">
                 <img alt="arrow" data-id=${index}  src="./images/icon-arrow-dark.svg"/>
           </picture>
         
