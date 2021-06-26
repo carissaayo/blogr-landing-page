@@ -83,6 +83,7 @@ body #main-con #top-part header .header-flex .nav-con {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  border-radius: 10px;
 }
 
 body #main-con #top-part header .header-flex .nav-con .nav {
@@ -611,21 +612,39 @@ body #main-con .attribution a {
   }
   body #main-con #top-part header .header-flex .login-con button {
     position: relative;
-    left: 37%;
+    margin-left: 30%;
     display: block;
     font-size: 1.2rem;
     width: 100px;
     margin-top: 5px;
     margin-bottom: 20px;
   }
+}
+
+@media screen and (max-width: 750px) and (max-width: 405px) {
+  body #main-con #top-part header .header-flex .login-con button {
+    margin-left: 25%;
+  }
+}
+
+@media screen and (max-width: 750px) {
   body #main-con #top-part header .header-flex .login-con button:nth-child(2) {
     height: 40px;
     width: 140px;
-    left: 35%;
+    margin-left: 28%;
     background-image: linear-gradient(to right, #ff7a85, #ff525d);
     color: white;
     border-radius: 20px;
   }
+}
+
+@media screen and (max-width: 750px) and (max-width: 405px) {
+  body #main-con #top-part header .header-flex .login-con button:nth-child(2) {
+    margin-left: 22%;
+  }
+}
+
+@media screen and (max-width: 750px) {
   body #main-con #top-part #hero-con {
     text-align: center;
   }
