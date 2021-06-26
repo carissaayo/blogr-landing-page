@@ -22,6 +22,8 @@ $VeryDarkDesaturatedBlue: hsl(237, 23%, 32%);
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  transition:  0.3s ease-in-out;
+  
 }
 body {
   font-family: "Ubuntu", sans-serif;
@@ -772,9 +774,10 @@ section {
         background-repeat: no-repeat;
         background-position: left center;
         height: fit-content;
+        margin-bottom: 20px;
         .art-flex-con {
           grid-template-columns: 1fr;
-          grid-template-rows: 1fr 1fr;
+          grid-template-rows:250px 1fr;
           column-gap: 0;
           .img-con {
             position: relative;
@@ -784,6 +787,12 @@ section {
               width: 400px;
               top: 0px;
               left: 0px;
+
+            @media screen and (max-width:420px) {
+              width:340px;
+              top: 30px;
+
+            }
             }
           }
           .art-text-con {
@@ -804,7 +813,7 @@ section {
         height: fit-content;
         .simple-con {
           grid-template-columns: 1fr;
-          grid-template-rows: 400px 1fr;
+          grid-template-rows: 300px 1fr;
           row-gap: 10px;
           column-gap: 0px;
           .img-con {
@@ -812,6 +821,7 @@ section {
               position: relative;
               top: 0px;
               left:0px;
+              img{width:100%}
             }
           }
           .simple-min-text-con {

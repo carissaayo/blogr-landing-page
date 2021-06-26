@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  transition: 0.3s ease-in-out;
 }
 
 body {
@@ -682,10 +683,11 @@ body #main-con .attribution a {
     background-repeat: no-repeat;
     background-position: left center;
     height: fit-content;
+    margin-bottom: 20px;
   }
   body #main-con .art .art-flex-con {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 250px 1fr;
     column-gap: 0;
   }
   body #main-con .art .art-flex-con .img-con {
@@ -698,6 +700,16 @@ body #main-con .attribution a {
     top: 0px;
     left: 0px;
   }
+}
+
+@media screen and (max-width: 750px) and (max-width: 420px) {
+  body #main-con .art .art-flex-con .img-con img {
+    width: 340px;
+    top: 30px;
+  }
+}
+
+@media screen and (max-width: 750px) {
   body #main-con .art .art-flex-con .art-text-con {
     margin-bottom: 50px;
     padding: 0px;
@@ -715,7 +727,7 @@ body #main-con .attribution a {
   }
   body #main-con .simple .simple-con {
     grid-template-columns: 1fr;
-    grid-template-rows: 400px 1fr;
+    grid-template-rows: 300px 1fr;
     row-gap: 10px;
     column-gap: 0px;
   }
@@ -723,6 +735,9 @@ body #main-con .attribution a {
     position: relative;
     top: 0px;
     left: 0px;
+  }
+  body #main-con .simple .simple-con .img-con picture img {
+    width: 100%;
   }
   body #main-con .simple .simple-con .simple-min-text-con {
     padding: 20px;
